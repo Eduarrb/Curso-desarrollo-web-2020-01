@@ -1,0 +1,31 @@
+header{
+    font-size: 48px;
+}
+section{
+    height: 397px;
+    text-align: center;
+    border: 3px solid #f7931e;
+    font-size: 48px;
+    /* color: peru; */
+}
+article{
+    border: 3px solid #009245;
+    height: 140px;
+    width: 943px;
+    display: inline-block;
+    text-align: center;
+}
+aside{
+    border: 3px solid #662d91;
+    height: 140px;
+    width: 943px;
+    display: inline-block;
+    text-align: center;
+}
+
+footer{
+    border: 3px solid #603813;
+    height: 84px;
+    text-align: center;
+    font-size: 48px;
+}
