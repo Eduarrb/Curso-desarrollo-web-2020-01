@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+    border: 2px dotted blue;
+    margin: 0 0 30px 0;
+}
+
+section{
+    border: 2px dotted lightcoral;
+    position: relative;
+}
+article{
+    border: 2px dotted green;
+    background-color: green;
+    text-align: center;
+    height: 100px;
+    width: 300px;
+    color: white;
+    font-size: 25px;
+}
+aside{
+    border: 2px dotted black;
+    text-align: center;
+    background-color: black;
+    height: 100px;
+    width: 300px;
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 31px;
+    left: 50px;
+    /* margin: 0 0 0 0; */
+}
+div{
+    background-color:peru;
+    height: 100px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+}

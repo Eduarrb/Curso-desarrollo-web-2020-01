@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+section{
+    background-color: peru;
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-evenly;
+}
+
+div{
+    background-color: green;
+    /* margin: 0 10px 0 0; */
+    font-size: 25px;
+    padding: 10px;
+}
