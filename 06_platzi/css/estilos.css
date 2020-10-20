@@ -7,6 +7,15 @@ body{
     font-family: 'Lato', sans-serif;
 }
 
+/* CONSTANTES */
+.contenedor{
+    /* width: 1600px; */
+    width: 80%;
+    /* border: 1px dotted red; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* NAV */
 nav{
     background-color: #273b47;
@@ -55,4 +64,55 @@ nav div ul li a{
     color: rgb(255,255,255);
     text-decoration: none;
     padding: 0 15px;
+}
+
+/* HEADER */
+
+header{
+    background-color: #efefef;
+    padding-top: 10px;
+    /* margin-top: 10px; */
+    /* border: 1px dotted blue; */
+}
+header .contenedor form{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+header .contenedor form input{
+    padding: 5px;
+    margin-right: 5px;
+}
+header .contenedor form button{
+    padding: 5px;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+header .contenedor div img{
+    display: block;
+    width: 100%;
+}
+
+header .contenedor div{
+    position: relative;
+}
+header .contenedor div article{
+    /* width: 70%; */
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(255,255,255,.7);
+    padding: 30px;
+}
+header .contenedor div article hr{
+    margin: 5px 0;
+}
+header .contenedor div article .flotante{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
