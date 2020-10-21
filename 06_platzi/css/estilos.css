@@ -23,6 +23,11 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+    top: 0;
 }
 
 nav img{
@@ -73,6 +78,7 @@ header{
     padding-top: 10px;
     /* margin-top: 10px; */
     /* border: 1px dotted blue; */
+    margin-top: 55px;
 }
 header .contenedor form{
     display: flex;
@@ -115,4 +121,53 @@ header .contenedor div article .flotante{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/* SECTION */
+section{
+    padding: 30px 0;
+}
+section .caja{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+section .caja article{
+    width: calc(100% / 3 - 20px);
+    margin-bottom: 10px;
+}
+section .caja article img{
+    display: block;
+    width: 100%;
+}
+section .caja article div h3{
+    padding: 10px 0;
+}
+section .caja article div div{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* FOOTER */
+footer{
+    text-align: center;
+    padding-bottom: 40px;
+}
+footer .pagina{
+    color: #9393af;
+}
+footer span:not(:last-child){
+    margin-right: 10px;
+}
+footer span a{
+    color: #666666;
+    text-decoration: none;
+    background-color: #eaeaea;
+    padding: 5px;
+    border: 1px solid #cccccc;
+}
+footer span a.active{
+    background-color: transparent;
+    border: 1px solid transparent;
 }
