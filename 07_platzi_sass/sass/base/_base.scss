@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+}
+
+$lato: 'Lato', sans-serif;
+// $morado: purple;
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: $lato;
+}
+
+a,
+a:link,
+a:visited{
+    text-decoration: none;
+    // color: $morado;
+}
+ul{
+    list-style: none;
+}
