@@ -3,18 +3,29 @@
     // font-size: 30px;
     display: flex;
     justify-content: space-between;
+    padding: 1rem;
     &--logo{
        display: block;
        width: 10rem;
     }
     &__menuBox{
+        display: flex;
+        align-items: center;
         &__menu{
+            display: flex;
             &__item{
+                &:not(:last-child){
+                    border-right: .2rem solid #fff;    
+                }
                 &--link{
                     color: white;
                     font-size: 1.6rem;
+                    padding: 0 1.5rem;
                 }
             }
+            // &__item:not(:last-child){
+            //     border-right: 2px solid white;
+            // }
         }
         &--session{
             font-size: 1.6rem;

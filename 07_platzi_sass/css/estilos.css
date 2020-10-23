@@ -17,22 +17,69 @@ a:visited {
 ul {
   list-style: none; }
 
+.contenedor {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto; }
+
 .nav {
   background-color: #273b47;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 1rem; }
   .nav--logo {
     display: block;
     width: 10rem; }
-  .nav__menuBox__menu__item--link {
-    color: white;
-    font-size: 1.6rem; }
-  .nav__menuBox--session {
-    font-size: 1.6rem;
-    background-color: #ff4842;
-    color: white;
-    padding: 1rem 1.5rem;
-    display: inline-block;
-    border-radius: .5rem; }
+  .nav__menuBox {
+    display: flex;
+    align-items: center; }
+    .nav__menuBox__menu {
+      display: flex; }
+      .nav__menuBox__menu__item:not(:last-child) {
+        border-right: .2rem solid #fff; }
+      .nav__menuBox__menu__item--link {
+        color: white;
+        font-size: 1.6rem;
+        padding: 0 1.5rem; }
+    .nav__menuBox--session {
+      font-size: 1.6rem;
+      background-color: #ff4842;
+      color: white;
+      padding: 1rem 1.5rem;
+      display: inline-block;
+      border-radius: .5rem; }
+
+.header {
+  background-color: #efefef; }
+  .header__contenedor__form {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 0; }
+    .header__contenedor__form--input {
+      font-size: 1.6rem;
+      font-family: "Lato", sans-serif; }
+    .header__contenedor__form--button {
+      padding: .5rem;
+      background-color: black;
+      color: white;
+      border: none;
+      margin-left: .5rem; }
+  .header__contenedor__box {
+    position: relative; }
+    .header__contenedor__box--img {
+      width: 100%;
+      display: block; }
+    .header__contenedor__box__article {
+      position: absolute;
+      bottom: 2rem;
+      left: 2rem;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 2rem;
+      font-size: 1.6rem; }
+      .header__contenedor__box__article--separador {
+        margin: 1rem 0; }
+      .header__contenedor__box__article__data {
+        display: flex;
+        justify-content: space-between; }
 
 /*# sourceMappingURL=estilos.css.map */
