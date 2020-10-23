@@ -1,0 +1,26 @@
+.section{
+    padding: 2rem 0;
+    &__contenedor{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &__article{
+            width: calc(100% / 3 - 2rem);
+            margin-bottom: 3rem;
+            &--img{
+                width: 100%;
+                display: block;
+            }
+            &__box{
+                font-size: 1.6rem;
+                &--separador{
+                    margin: 1rem 0;
+                }
+                &__data{
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}

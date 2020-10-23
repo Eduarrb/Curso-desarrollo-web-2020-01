@@ -1,0 +1,25 @@
+.footer{
+    text-align: center;
+    font-size: 1.6rem;
+    padding-bottom: 3rem;
+    &--paginas{
+        color: #9393af;
+    }
+    &__numeracion{
+        margin-left: 1rem;
+        &--link{
+            color: #666666;
+            background-color: #eaeaea;
+            padding: .5rem;
+            border: 1px solid #cccccc;
+            &.active{
+                background-color: transparent;
+                border: 1px solid transparent;
+            }
+        }
+        // &--link.active{
+        //     background-color: transparent;
+        //     border: 1px solid transparent;
+        // }
+    }
+}

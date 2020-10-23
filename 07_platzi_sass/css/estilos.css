@@ -82,4 +82,41 @@ ul {
         display: flex;
         justify-content: space-between; }
 
+.section {
+  padding: 2rem 0; }
+  .section__contenedor {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .section__contenedor__article {
+      width: calc(100% / 3 - 2rem);
+      margin-bottom: 3rem; }
+      .section__contenedor__article--img {
+        width: 100%;
+        display: block; }
+      .section__contenedor__article__box {
+        font-size: 1.6rem; }
+        .section__contenedor__article__box--separador {
+          margin: 1rem 0; }
+        .section__contenedor__article__box__data {
+          display: flex;
+          justify-content: space-between; }
+
+.footer {
+  text-align: center;
+  font-size: 1.6rem;
+  padding-bottom: 3rem; }
+  .footer--paginas {
+    color: #9393af; }
+  .footer__numeracion {
+    margin-left: 1rem; }
+    .footer__numeracion--link {
+      color: #666666;
+      background-color: #eaeaea;
+      padding: .5rem;
+      border: 1px solid #cccccc; }
+      .footer__numeracion--link.active {
+        background-color: transparent;
+        border: 1px solid transparent; }
+
 /*# sourceMappingURL=estilos.css.map */
