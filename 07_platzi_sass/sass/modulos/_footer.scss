@@ -12,6 +12,8 @@
             background-color: #eaeaea;
             padding: .5rem;
             border: 1px solid #cccccc;
+            display: inline-block;
+            margin-bottom: 1rem;
             &.active{
                 background-color: transparent;
                 border: 1px solid transparent;

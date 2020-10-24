@@ -1,5 +1,6 @@
 .header{
     background-color: #efefef;
+    margin-top: 5.9rem;
     &__contenedor{
         &__form{
             display: flex;
@@ -31,6 +32,9 @@
                 background-color: rgba(#fff, .7);
                 padding: 2rem;
                 font-size: 1.6rem;
+                @media only screen and(max-width: $bp-large){
+                    position: unset;
+                }
                 &--separador{
                     margin: 1rem 0;
                 }
