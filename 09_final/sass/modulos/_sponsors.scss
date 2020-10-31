@@ -1,0 +1,26 @@
+.sponsors{
+    padding: 4rem 6rem;
+    background-color: #f3f4f5;
+    &__titulo{
+        text-align: center;
+        color: #2400ff;
+        font-family: $font-ibm;
+        font-weight: 500;
+        font-size: 1.4rem;
+    }
+    &__logos{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 6rem;
+        &__imgBox{
+            width: calc(100% / 8 - 21rem / 8);
+            display: flex;
+            justify-content: center;
+            &--img{
+                display: block;
+                // width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.saludo{
+    &__container{
+        &__parrafoTop{
+            font-family: $font-ibm;
+            color: #2400ff;
+            font-size: 3.2rem;
+            display: flex;
+            flex-direction: column;
+            padding: 0 10rem;
+            span{
+                &:not(:last-child){
+                    margin-bottom: 4rem;
+                }
+            }
+        }
+    }
+}

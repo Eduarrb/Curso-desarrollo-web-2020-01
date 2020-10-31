@@ -63,12 +63,24 @@ body {
 .btn-white {
   background-color: white;
   color: black;
-  border: 1px solid black; }
+  border: 1px solid black;
+  transition: all .3s; }
+  .btn-white:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    transition: all .3s; }
 
 .btn-black {
   background-color: black;
   color: white;
-  border: 1px solid white; }
+  border: 1px solid white;
+  transition: all .3s; }
+  .btn-black:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: all .3s; }
 
 .nav {
   display: flex;
@@ -158,5 +170,36 @@ body {
       .header__container__col__descriBox__descri i {
         color: #00ff47;
         margin-right: 1rem; }
+
+.sponsors {
+  padding: 4rem 6rem;
+  background-color: #f3f4f5; }
+  .sponsors__titulo {
+    text-align: center;
+    color: #2400ff;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-size: 1.4rem; }
+  .sponsors__logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6rem; }
+    .sponsors__logos__imgBox {
+      width: calc(100% / 8 - 21rem / 8);
+      display: flex;
+      justify-content: center; }
+      .sponsors__logos__imgBox--img {
+        display: block; }
+
+.saludo__container__parrafoTop {
+  font-family: "IBM Plex Mono", monospace;
+  color: #2400ff;
+  font-size: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10rem; }
+  .saludo__container__parrafoTop span:not(:last-child) {
+    margin-bottom: 4rem; }
 
 /*# sourceMappingURL=estilos.css.map */
