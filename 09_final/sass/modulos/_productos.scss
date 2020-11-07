@@ -11,7 +11,8 @@
             color: white;
         }
         &--descri{
-            font-size: 2.2rem;
+            font-size: 2.5rem;
+            font-weight: 500;
             font-family: $font-basis;
             color: #888888;
             text-align: center;
@@ -24,8 +25,17 @@
             margin-top: 4rem;
             &__producto{
                 width: calc(100% / 4 - 3rem / 4);
-                @media only screen and(max-width: $bp-large){
+                &:nth-child(-n+3){
+                    margin-right: 1rem;
+                }
+                @media only screen and(max-width: $bp-big){
                     width: calc(100% / 3 - 2rem / 3);
+                    &:nth-child(-n+3){
+                        margin-right: 0;
+                    }
+                    &:nth-child(-n+2){
+                        margin-right: 1rem;
+                    }
                 }
                 &__top{
                     text-align: center;
@@ -43,10 +53,83 @@
                     }
 
                 }
-               &__bottom{
-                   background-color: white;
-               } 
+                &__bottom{
+                    background-color: white;
+                    padding: 3rem 0;
+                    font-family: $font-basis;
+                    font-weight: 500;
+                    &--descri{
+                        font-size: 2rem;
+                        text-align: center;
+                        height: 8rem;
+                        line-height: 2rem;
+                    }
+                    &__lista{
+                        width: 68%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-top: 3rem;
+                        &--item{
+                            font-size: 1.8rem;
+                            &:not(:last-child){
+                                margin-bottom: 1rem;
+                            }
+                            i{
+                                color: #00ff47;
+                            }
+                        }
+                    }
+                    &--tiempo{
+                        font-size: 1.7rem;
+                        color: #888888;
+                        text-align: center;
+                        margin-top: 3rem;
+                    }
+                    &--costo{
+                        font-size: 2.3rem;
+                        text-align: center;
+                        color: #888888;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-transform: uppercase;
+                        span{
+                            color: black;
+                            font-size: 4.3rem;
+                            font-weight: 700;
+                            margin-right: .5rem;
+                        }
+                    }
+                    &--btn{
+                        text-align: center;
+                        margin-top: .5rem;
+                    }
+                    &--link{
+                        text-align: center;
+                        margin-top: 1rem;
+                        // a{
+                        //     color: #2400ff;
+                        //     font-size: 1.5rem;
+                        //     display: flex;
+                        //     align-items: center;
+                        //     justify-content: center;
+                        // }
+                    }
+                } 
             }
+        }
+        &--anuncio{
+            font-size: 1.9rem;
+            font-weight: 500;
+            font-family: $font-basis;
+            line-height: 2rem;
+            color: white;
+            text-align: center;
+            margin-top: 4rem;
+        }
+        &__btn{
+            text-align: center;
+            margin-top: 2rem;
         }
     }
 }

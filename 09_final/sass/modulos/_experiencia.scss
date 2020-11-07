@@ -1,0 +1,45 @@
+.experiencia{
+    background-color: #f3f4f5;
+    background-image: url(../img/isometric.png);
+    background-size: cover;
+    background-position: center;
+    &__container{
+        display: flex;
+        justify-content: center;
+        &__col{
+            width: 40%;
+            &--titulo{
+                font-family: $font-ibm;
+                font-size: 3.8rem;
+                line-height: 4.4rem;
+                font-weight: 400;
+                margin-bottom: 2rem;
+            }
+            &__parrafo{
+                font-family: $font-basis;
+                font-size: 2.1rem;
+                font-weight: 500;
+                line-height: 2.5rem;
+            }
+            &__btn{
+                margin-top: 2rem;
+                display: flex;
+            }
+            &__lista{
+                display: flex;
+                font-size: 1.8rem;
+                font-weight: 500;
+                font-family: $font-basis;
+                line-height: 2rem;
+                &:not(:last-child){
+                    margin-bottom: 2rem;
+                }
+                i{
+                    color: #00ff47;
+                    font-size: 2rem;
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+}
