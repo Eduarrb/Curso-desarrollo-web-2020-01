@@ -1,0 +1,21 @@
+.recomendacion{
+    padding: 5rem 0;
+    &--titulo{
+        font-family: $font-ibm;
+        font-size: 1.4rem;
+        color: #2400ff;
+        text-align: center;
+        font-weight: 500;
+    }
+    &__logos{
+        width: 110rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            display: block;
+        }
+    }
+}

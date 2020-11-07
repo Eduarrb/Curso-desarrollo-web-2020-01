@@ -1,0 +1,52 @@
+.razones{
+    background-color: #1a1a1a;
+    background-image: url(../img/beed_Isometric.png);
+    background-size: cover;
+    background-position: center;
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+        &__col{
+            &.colIzquierda{
+                width: 40%;
+            }
+            &.colDerecha{
+                width: 60%;
+            }
+            &__lista{
+                font-family: $font-basis;
+                font-size: 1.8rem;
+                font-weight: 500;
+                color: white;
+                display: flex;
+                line-height: 2rem;
+                &:not(:last-child){
+                    margin-bottom: 3rem;
+                }
+                i{
+                    color: #00ff47;
+                    margin-right: 1rem;
+                }
+            }
+            &--titulo{
+                font-family: $font-ibm;
+                font-size: 3.8rem;
+                color: white;
+                font-weight: 400;
+                line-height: 4.4rem;
+            }
+            &--parrafo{
+                font-family: $font-basis;
+                font-size: 2.1rem;
+                font-weight: 500;
+                line-height: 2.5rem;
+                color: #888888;
+                margin-top: 2rem;
+            }
+            &__btn{
+                margin-top: 2rem;
+                display: flex;
+            }
+        }
+    }
+}

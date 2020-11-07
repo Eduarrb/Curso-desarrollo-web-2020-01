@@ -121,6 +121,18 @@
         margin-left: 1rem;
     }
 }
+.btn-line-white{
+    color: white;
+    font-size: 1.8rem;
+    display: flex;
+    // align-items: center;
+    font-weight: 700;
+    justify-content: center;
+    font-family: $font-basis;
+    img{
+        margin-left: 1rem;
+    }
+}
 // COLORES
 .bg-color1{
     background-color: #ffece1;
