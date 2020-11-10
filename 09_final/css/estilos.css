@@ -158,7 +158,12 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 2rem;
-  align-items: center; }
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  top: 0;
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.3); }
   .nav--img {
     display: block;
     width: 7.5rem;
@@ -167,6 +172,13 @@ body {
     font-family: "Darker Grotesque", sans-serif;
     display: flex;
     align-items: center; }
+    @media only screen and (max-width: 62em) {
+      .nav__box {
+        position: absolute;
+        background-color: #f2f4f6;
+        bottom: -6.3rem;
+        left: 0;
+        right: 0; } }
     .nav__box__menu {
       display: flex; }
       .nav__box__menu__item {
@@ -218,10 +230,22 @@ body {
       .nav__box--contact:hover {
         background-color: #00ff47;
         transition: all .3s; }
+  .nav__icons {
+    display: none; }
+    @media only screen and (max-width: 62em) {
+      .nav__icons {
+        display: block; } }
+    .nav__icons a {
+      color: black; }
+      .nav__icons a:not(:last-child) {
+        margin-right: 1.5rem; }
+      .nav__icons a i {
+        font-size: 2.2rem; }
 
 .header {
   background-color: #0e0e0e;
-  color: white; }
+  color: white;
+  margin-top: 11.5rem; }
   .header__container__col img {
     display: block;
     width: 77%; }
@@ -515,13 +539,53 @@ body {
     text-align: center;
     font-weight: 500; }
   .recomendacion__logos {
-    width: 110rem;
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    padding: 0; }
     .recomendacion__logos img {
       display: block; }
+    .recomendacion__logos--facebook {
+      width: 15%; }
+    .recomendacion__logos--apple {
+      width: 10%; }
+    .recomendacion__logos--google {
+      width: 15%; }
+
+.contacto {
+  padding: 5rem 0;
+  text-align: center; }
+  .contacto--titulo {
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 1.9rem;
+    font-weight: 500;
+    line-height: 2rem;
+    color: #333333;
+    margin-bottom: 5rem; }
+
+.footer {
+  background-color: black;
+  padding-top: 4rem; }
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; }
+    .footer__container__col__social i {
+      font-size: 2.4rem;
+      color: #666666; }
+      .footer__container__col__social i:not(:last-child) {
+        margin-right: 1rem; }
+    .footer__container__col__contacto {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1.8rem; }
+      .footer__container__col__contacto a {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.4rem;
+        margin-bottom: .5rem; }
+    .footer__container__col img {
+      display: block;
+      width: 4.5rem; }
 
 /*# sourceMappingURL=estilos.css.map */

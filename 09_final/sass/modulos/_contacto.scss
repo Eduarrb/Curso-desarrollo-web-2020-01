@@ -1,0 +1,12 @@
+.contacto{
+    padding: 5rem 0;
+    text-align: center;
+    &--titulo{
+        font-family: $font-basis;
+        font-size: 1.9rem;
+        font-weight: 500;
+        line-height: 2rem;
+        color: #333333;
+        margin-bottom: 5rem;
+    }
+}
