@@ -3,10 +3,17 @@
     color: white;
     margin-top: 11.5rem;
     &__container{
+        @media only screen and (max-width: $bp-medium){
+            flex-wrap: wrap;
+        }
         &__col{
+            @media only screen and (max-width: $bp-medium){
+                justify-content: center;
+            }
             img{
                 display: block;
                 width: 77%;
+                
             }
             &--titulo{
                 font-family: $font-ibm;
@@ -15,8 +22,18 @@
                 font-size: 4rem;
                 line-height: 4.2rem;
                 margin-bottom: 3rem;
+                @media only screen and (max-width: $bp-large){
+                    font-size: 4.6rem;
+                }
+                @media only screen and (max-width: $bp-medium){
+                    font-size: 3.5rem;
+                    text-align: center;
+                }
             }
             &__descriBox{
+                @media only screen and (max-width: $bp-large){
+                    display: none;
+                }
                 width: 70%;
                 &__descri{
                     font-size: 1.8rem;
@@ -30,6 +47,16 @@
                     i{
                         color: #00ff47;
                         margin-right: 1rem;
+                    }
+                }
+            }
+            &__botones{
+                @media only screen and (max-width: $bp-medium){
+                    text-align: center;
+                }
+                &--btnBlanco{
+                    @media only screen and (max-width: $bp-large){
+                        margin-bottom: 1rem;
                     }
                 }
             }

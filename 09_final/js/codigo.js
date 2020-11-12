@@ -35,8 +35,4 @@ btnSubMenu.addEventListener('click', e => {
         subMenu.style.height = '252px';
         menu.style.height = '441px';
     }
-})
-
-Array(subMenu.children).forEach(item => {
-    console.log(item.offsetHeight)
-})
+});

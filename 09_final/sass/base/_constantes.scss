@@ -3,12 +3,30 @@
     margin-left: auto;
     margin-right: auto;
     padding: 5rem 0;
+    @media only screen and (max-width: $bp-large){
+        max-width: 72rem;
+    }
+    @media only screen and (max-width: $bp-medium){
+        max-width: 54rem;
+    }
+    @media only screen and (max-width: $bp-small){
+        max-width: 90%;
+    }
 }
 .container-small{
     max-width: 94rem;
     margin-left: auto;
     margin-right: auto;
     padding: 5rem 0;
+    @media only screen and (max-width: $bp-large){
+        max-width: 72rem;
+    }
+    @media only screen and (max-width: $bp-medium){
+        max-width: 54rem;
+    }
+    @media only screen and (max-width: $bp-small){
+        max-width: 90%;
+    }
 }
 .text-center{
     text-align: center;
@@ -63,6 +81,9 @@
 // GRILLAS
 .col-6{
     width: calc(100% / 2 - 1.5rem);
+    @media only screen and (max-width: $bp-medium){
+        width: 100%;
+    }
 }
 
 // BOTONES

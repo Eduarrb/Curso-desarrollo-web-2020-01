@@ -9,9 +9,17 @@
         &__col{
             &.colIzquierda{
                 width: 40%;
+                @media only screen and (max-width: $bp-medium){
+                    width: 100%;
+                    order: 1;
+                }
             }
             &.colDerecha{
                 width: 60%;
+                @media only screen and (max-width: $bp-medium){
+                    width: 100%;
+                    margin-bottom: 3rem;
+                }
             }
             &__lista{
                 font-family: $font-basis;

@@ -13,10 +13,17 @@
         justify-content: space-between;
         align-items: center;
         margin-top: 6rem;
+        flex-wrap: wrap;
         &__imgBox{
             width: calc(100% / 8 - 21rem / 8);
             display: flex;
             justify-content: center;
+            @media only screen and (max-width: $bp-large){
+                width: calc(25% - 9rem / 4);
+                &:nth-child(-n+4){
+                    margin-bottom: 3rem;
+                }
+            }
             &--img{
                 display: block;
                 // width: 100%;
