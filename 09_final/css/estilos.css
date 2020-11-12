@@ -176,11 +176,22 @@ body {
       .nav__box {
         position: absolute;
         background-color: #f2f4f6;
-        bottom: -6.3rem;
+        bottom: -18.9rem;
         left: 0;
-        right: 0; } }
+        right: 0;
+        height: 0;
+        top: 11.5rem;
+        overflow: hidden;
+        transition: all .3s; }
+        .nav__box.active {
+          transition: all .3s;
+          box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1); } }
     .nav__box__menu {
       display: flex; }
+      @media only screen and (max-width: 62em) {
+        .nav__box__menu {
+          flex-direction: column;
+          width: 100%; } }
       .nav__box__menu__item {
         position: relative; }
         .nav__box__menu__item:hover .nav__box__menu__item__subMenu {
@@ -198,6 +209,11 @@ body {
             transition: all .3s; }
           .nav__box__menu__item--link i {
             margin-left: 1rem; }
+          @media only screen and (max-width: 62em) {
+            .nav__box__menu__item--link {
+              width: 100%;
+              display: flex;
+              justify-content: space-between; } }
         .nav__box__menu__item__subMenu {
           background-color: #e9e9e9;
           position: absolute;
@@ -215,6 +231,24 @@ body {
             .nav__box__menu__item__subMenu__item--link:hover {
               background-color: #2400ff;
               color: white; }
+          @media only screen and (max-width: 62em) {
+            .nav__box__menu__item__subMenu__item {
+              background-color: #e7e7e7;
+              width: 80%;
+              margin-left: auto;
+              margin-right: auto; } }
+          @media only screen and (max-width: 62em) {
+            .nav__box__menu__item__subMenu {
+              position: unset;
+              opacity: 1;
+              visibility: visible;
+              width: 100%;
+              background-color: #dddddd;
+              overflow: hidden;
+              height: 0;
+              transition: all .3s; }
+              .nav__box__menu__item__subMenu.active {
+                transition: all .3s; } }
     .nav__box--contact {
       color: #000;
       display: inline-block;
@@ -230,13 +264,17 @@ body {
       .nav__box--contact:hover {
         background-color: #00ff47;
         transition: all .3s; }
+      @media only screen and (max-width: 62em) {
+        .nav__box--contact {
+          display: none; } }
   .nav__icons {
     display: none; }
     @media only screen and (max-width: 62em) {
       .nav__icons {
         display: block; } }
     .nav__icons a {
-      color: black; }
+      color: black;
+      display: inline-block; }
       .nav__icons a:not(:last-child) {
         margin-right: 1.5rem; }
       .nav__icons a i {

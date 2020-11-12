@@ -20,12 +20,26 @@
         @media only screen and (max-width: $bp-large){
             position: absolute;
             background-color: #f2f4f6;
-            bottom: -6.3rem;
+            bottom: -18.9rem;
             left: 0;
             right: 0;
+            height: 0;
+            top: 11.5rem;
+            overflow: hidden;
+            transition: all .3s;
+            &.active{
+                // height: 44.1rem;
+                transition: all .3s;
+                box-shadow: 0 1rem 1rem rgba(black,.1);
+            }
+
         }
         &__menu{
             display: flex;
+            @media only screen and (max-width: $bp-large){
+                flex-direction: column;
+                width: 100%;
+            }
             &__item{
                 position: relative;
                 &:hover .nav__box__menu__item__subMenu{
@@ -45,6 +59,11 @@
                     }
                     i{
                         margin-left: 1rem;
+                    }
+                    @media only screen and (max-width: $bp-large){
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
                     }
                 }
                 &__subMenu{
@@ -67,6 +86,25 @@
                                 color: white;
                             }
                         }
+                        @media only screen and (max-width: $bp-large){
+                            background-color: #e7e7e7;
+                            width: 80%;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                    }
+                    @media only screen and (max-width: $bp-large){
+                        position: unset;
+                        opacity: 1;
+                        visibility: visible;
+                        width: 100%;
+                        background-color: #dddddd;
+                        overflow: hidden;
+                        height: 0;
+                        transition: all .3s;
+                        &.active{
+                            transition: all .3s;
+                        }
                     }
                 }
             }
@@ -87,6 +125,9 @@
                 background-color: #00ff47;
                 transition: all .3s;
             }
+            @media only screen and (max-width: $bp-large){
+                display: none;
+            }
         }
     }
     &__icons{
@@ -96,6 +137,7 @@
         }
         a{
             color: black;
+            display: inline-block;
             &:not(:last-child){
                 margin-right: 1.5rem;
             }
