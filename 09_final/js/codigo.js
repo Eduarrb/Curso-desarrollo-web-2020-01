@@ -22,17 +22,30 @@ btnMenu.addEventListener('click', (e) => {
     }
 });
 
-btnSubMenu.addEventListener('click', e => {
-    e.preventDefault();
-    // console.log('click');
-    if(subMenu.classList.contains('active')){
-        subMenu.classList.remove('active');
-        subMenu.style.height = '0';
-        menu.style.height = '189px';
+window.addEventListener('resize', e => {
+    // console.log(window.innerWidth);
+    if(window.innerWidth > 992){
+        subMenu.style.height = '252px';
     }
     else{
-        subMenu.classList.add('active');
-        subMenu.style.height = '252px';
-        menu.style.height = '441px';
+        subMenu.style.height = '0';
+    }
+})
+
+btnSubMenu.addEventListener('click', e => {
+    // console.log(window.innerWidth);
+    if(window.innerWidth <= 992){
+        e.preventDefault();
+        // console.log('click');
+        if(subMenu.classList.contains('active')){
+            subMenu.classList.remove('active');
+            subMenu.style.height = '0';
+            menu.style.height = '189px';
+        }
+        else{
+            subMenu.classList.add('active');
+            subMenu.style.height = '252px';
+            menu.style.height = '441px';
+        }
     }
 });

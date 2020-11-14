@@ -54,9 +54,18 @@
                 @media only screen and (max-width: $bp-medium){
                     text-align: center;
                 }
+                @media only screen and (max-width: $bp-small){
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
                 &--btnBlanco{
                     @media only screen and (max-width: $bp-large){
                         margin-bottom: 1rem;
+                    }
+                    @media only screen and (max-width: $bp-small){
+                        margin-right: 0;
                     }
                 }
             }
